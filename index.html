@@ -76,11 +76,162 @@
                 <img src="utils\instructions-light.webp">
             </div>  
         </div>
-        <div class="mt-15 ml-35 flex flex-cols-3 border-1 pt-10 pb-10 pl-10 pr-10 w-283 bg-gray-100 rounded-lg mt-7">
-            <p class="text-3xl text-black-800 pt-4">Use AI features in VS Code for free</p>
-            <p class="pl-25 pt-6">No trial. No credit card required. Just your GitHub account.
-                <button class="flex border-1 text-black-600 border-gray-400 rounded-md bg-gray-200 pt-1 pb-1 pl-4 pr-4 mt-2">Try free</button>
+        <div class="bg-[url('utils\copilot-free-banner-bg-light.webp')] bg-cover mt-15 ml-35 flex flex-cols-3 border-1 pt-8 pb-8 pl-10 pr-10 w-283 bg-gray-100 rounded-lg mt-7">
+            <p class="font-medium text-3xl text-black-800 pt-2">Use AI features in VS Code for free</p>
+            <p class="font-medium pl-25 pt-4">No trial. No credit card required. Just your GitHub account.
+                <button class="font-medium flex border-1 text-black-600 border-gray-400 rounded-md bg-gray-200 pt-1 pb-1 pl-4 pr-4 mt-2">Try free</button>
             </p><br>
+        </div>
+        <div class="flex mt-15 ml-35 flex-cols-3 pt-8 pb-8 pl-1 pr-1 w-283 mt-7">
+            <div>
+            <p class="pt-30 text-3xl font-semibold mb-3">Agent mode</p>
+            <p class="font-medium text-lg text-gray-600 mb-3">Tackle complex, multi-step tasks. Agent mode reads your codebase, suggests edits across files, runs terminal commands, and responds to compile or test failures — all in a loop until the job is done. Further refine agent mode to fit your team's workflows with VS Code extensions and Model Context Protocol (MCP) servers.</p>
+            <p class="text-blue-700 font-medium underline">Build with agent mode</p>
+            </div>
+            <img src="utils\swimlane-chat-light.webp" class="pl-20 w-280 h-130">
+        </div>
+        <div class="flex mt-15 ml-35 flex-cols-3 pt-8 pb-8 pl-1 pr-1 w-283 mt-7">
+            <div>
+            <p class="pt-30 text-3xl font-semibold mb-3">Next edit suggestions</p>
+            <p class="font-medium text-lg text-gray-600 mb-3">VS Code predicts your next move as you code. Use the Tab key to accept AI-powered suggestions right in your editor. It intelligently recommends what to change — and where — based on the edits you're already making.</p>
+            <p class="text-blue-700 font-medium underline">Code with AI-powered suggestions</p>
+            </div>
+            <img src="utils\swimlane-nes-light.webp" class="pl-20 w-280 h-130">
+        </div>
+        <div class="flex flex-cols-2 mt-15 ml-35 flex-cols-3 pt-8 pb-8 pl-1 pr-1 w-283 mt-7">
+            <div class="w-1/4 mr-20 mt-8">
+            <p class="pt-30 text-3xl font-semibold pb-3 pr-30 whitespace-nowrap">Code with extensions</p>
+            <p class="font-medium text-medium text-gray-600 mb-3">Customize VS Code with AI-powered functionality from extensions and Model Context Protocol servers to use in Chat. Or, build your own extension to power your team's unique scenarios.</p>
+            </div>
+            <div class="grid grid-cols-3 ">
+                <div class="bg-gray-50 flex border-1 border-gray-400 p-2 mr-2 mb-1 text-xs rounded-md pl-4 pt-4 pb-4 pr-4">
+                    <div>
+                        <img src="utils\python-extension.png" class="w-22 pr-3 pt-3">
+                    </div>
+                    <div>
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">Python</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Adds rich language support for Python</p>
+                    </div>
+                </div>
+                <div class="bg-gray-100 flex border-1 border-gray-400 p-2 mr-2 mb-2 text-xs rounded-md pl-4 pt-4 pb-4 pr-4">
+                    <div>
+                        <img src="utils\stripe-extension.png" class="w-22 pr-3 pt-3">
+                    </div>
+                    <div>
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">Stripe</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Build, test, and use Stripe inside your editor</p>
+                    </div>
+                </div>
+                <div class="bg-gray-100 flex border-1 border-gray-400 p-2 mr-2 mb-2 text-xs rounded-md pl-4 pt-4 pb-4 pr-4">
+                    <div>
+                        <img src="utils\c-extension.png" class="w-22 pr-3 pt-3">
+                    </div>
+                    <div>
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">C/C++</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Adds rich language support for C/C++</p>
+                    </div>
+                </div>
+                <div class="bg-gray-100 flex border-1 border-gray-400 p-2 mr-2 mb-2 text-xs rounded-md pl-4 pt-4 pb-4 pr-4">
+                    <div>
+                        <img src="utils\jupyter-extension.png" class="w-22 pr-3 pt-3">
+                    </div>
+                    <div>
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">Jupyter</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Language support for Jupyter Notebooks</p>
+                    </div>
+                </div>
+                <div class="bg-gray-100 flex border-1 border-gray-400 p-2 mr-2 mb-2 text-xs rounded-md pl-4 pt-4 pb-4 pr-4">
+                    <div>
+                        <img src="utils\gitlens-extension.png" class="w-22 pr-3 pt-3">
+                    </div>
+                    <div>
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">GitLens</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Supercharge your Git experience</p>
+                    </div>
+                </div>
+                <div class="bg-gray-100 flex border-1 border-gray-400 p-2 mr-2 mb-2 text-xs rounded-md pl-4 pt-4 pb-4 pr-4">
+                    <div>
+                        <img src="utils\cs-dev-kit-extension.png" class="w-22 pr-3 pt-3">
+                    </div>
+                    <div>
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">C# Dev Kit</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Powerful tools for your C# environment</p>
+                    </div>
+                </div>
+                <div class="bg-gray-100 flex border-1 border-gray-400 p-2 mr-2 mb-2 text-xs rounded-md pl-4 pt-4 pb-4 pr-4">
+                    <div>
+                        <img src="utils\mongodb-extension.png" class="w-22 pr-3 pt-3">
+                    </div>
+                    <div>
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">MongoDB</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Extension for the @MongoDB agent</p>
+                    </div>
+                </div>
+                <div class="bg-gray-100 flex border-1 border-gray-400 p-2 mr-2 mb-2 text-xs rounded-md pl-4 pt-4 pb-4 pr-4">
+                    <div>
+                        <img src="utils\azure.png" class="w-22 pr-3 pt-3">
+                    </div>
+                    <div>
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">GitHub Copilot for Azure</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Streamline the process of developing for Azure</p>
+                    </div>
+                </div>
+                <div class="bg-gray-100 flex border-1 border-gray-400 p-2 mr-2 mb-2 text-xs rounded-md pl-4 pt-4 pb-4 pr-4">
+                    <div>
+                        <img src="utils\remote-extension.png" class="w-22 pr-3 pt-3">
+                    </div>
+                    <div>
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">Remote Development</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Open folders in a container on a remote machine</p>
+                    </div>
+                </div>
+                <div class="pl-50 text-sm">
+                    <p class="whitespace-nowrap">
+                        <span>View 75k+ extensions in the 
+                        <a href="" class="text-blue-700 font-medium underline">Extension Marketplace</a></span>
+                    </p>
+                </div>
+                <!-- <div class="border-1 border-gray-400">
+                    Stripe extension icon<br>
+                    Stripe<br>
+                    Build, test, and use Stripe inside your editor<br>
+                </div>
+                <div>
+                    C/C extension icon<br>
+                    C/C++<br>
+                    Adds rich language support for C/C++<br>
+                </div>
+                <div class="border-1 border-gray-400">        
+                    Jupyter extension icon<br>
+                    Jupyter<br>
+                    Language support for Jupyter Notebooks<br>
+                </div>
+                <div class="border-1 border-gray-400">
+                    GitLens extension icon<br>  
+                    GitLens<br>
+                    Supercharge your Git experience<br>
+                </div>
+                <div class="border-1 border-gray-400">
+                    C# Dev Kit extension icon<br>
+                    C# Dev Kit<br>
+                    Powerful tools for your C# environment<br>
+                </div>
+                <div class="border-1 border-gray-400">
+                    MongoDB extension icon<br>
+                    MongoDB<br>
+                    Extension for the @MongoDB agent<br>
+                </div>
+                <div class="border-1 border-gray-400">
+                    GitHub Copilot for Azure extension icon<br>
+                    GitHub Copilot for Azure<br>
+                    Streamline the process of developing for Azure<br>
+                </div>
+                <div class="border-1 border-gray-400">
+                    Remote Development extension icon<br>
+                    Remote Development<br>
+                    Open folders in a container on a remote machine<br>
+                </div> -->
+            </div>
         </div>
     </div>
 </body>
