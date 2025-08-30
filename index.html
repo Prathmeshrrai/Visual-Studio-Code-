@@ -8,14 +8,14 @@
 </head>
 <body>
     <div class="">
-        <nav class="grid grid-cols-1">
-            <div class="flex gap-3 border-1 border-gray-300 pb-4">
+        <nav class="grid grid-cols-1 pb-20 fixed top-0 left-0 w-full z-50 bg-white items-center h-16">
+            <div class="flex gap-3 border-t border-b border-gray-300 pb-4 items-center">
                 <div>
                     <img src="utils\vslogo.png" class="w-6 ml-25 mt-8">
                 </div>
                 <p class="mt-7 font-semibold text-xl">Visual Studio Code</p> 
                 <div class="">
-                <ul class="flex flex-row mt-8 gap-6 ml-4 font-semibold text-gray-800">
+                <ul class="flex flex-row mt-8 gap-6 ml-4 font-semibold text-gray-800 whitespace-nowrap">
                     <li>Docs</li>
                     <li>Updates</li>
                     <li>Blog</li>
@@ -32,9 +32,14 @@
                 </div>
             </div>
         </nav>
-        <main>
-            <div class="border-1 pt-2 pb-2 border-gray-300 bg-blue-50 text-gray-800 font-medium scroll-ml-4 scroll-ps-6">
-                <P class="text-center ">For Educational Purpose Only</P>
+        <main class="pt-20">
+            <div class="justify-between flex items-center border-b pt-2 pb-2 border-gray-300 bg-blue-50 text-gray-800 font-medium scroll-ml-4 scroll-ps-6">
+                <P class="flex-1 text-center">For Educational Purpose Only</P>
+                <button class="p-2 rounded hover:bg-gray-100 pt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
             </div>
             <div class="relative flex justify-center bg-white border-none border-gray-300">
                 <p class=" text-gray-200 text-xs">
@@ -299,32 +304,131 @@
         </div>
         <div class="flex mt-15 ml-35 flex-cols-3 pt-8 pb-8 pl-1 pr-1 w-283 mt-7">
             <div>
-            <p class="pt-30 text-3xl font-semibold mb-3">Fully customizable</p>
-            <p class="font-medium text-lg text-gray-600 mb-3">Customize your VS Code UI and layout so that it fits your coding style.
-
-Color themes let you modify the colors in VS Code's user interface to suit your preferences and work environment.
-
-Settings Sync enables you to share your user settings across your VS Code instances with the Settings Sync feature.
-
-Profiles let you create sets of customizations and quickly switch between them or share them with others.</p>
-            <p class="text-blue-700 font-medium underline">Code with AI-powered suggestions</p>
+            <p class="pt-0 text-3xl font-semibold mb-3">Fully customizable</p>
+            <p class="font-medium text-medium text-gray-600 mb-3 pr-10">Customize your VS Code UI and layout so that it fits your coding style.
+                <br>
+                <br>
+                <a href="" class="text-blue-700 font-medium underline">Color themes</a> let you modify the colors in VS Code's user interface to suit your preferences and work environment.
+                <br>
+                <br>
+                <a href="" class="text-blue-700 font-medium underline">Settings Sync</a> enables you to share your user settings across your VS Code instances with the Settings Sync feature.
+                <br>
+                <br>
+                <a href="" class="text-blue-700 font-medium underline">Profiles</a> let you create sets of customizations and quickly switch between them or share them with others.</p>
             </div>
-            <img src="utils\swimlane-customized-light.png" class="pl-20 w-280 h-130">
+            <img src="utils\swimlane-customized-light.png" class="pl-20 w-250 h-100 pt-5">
         </div>
         <div class="flex mt-15 ml-35 flex-cols-3 pt-8 pb-8 pl-1 pr-1 w-283 mt-7">
             <div>
             <p class="pt-0 text-3xl font-semibold mb-3">Code anywhere</p>
-            <p class="font-medium text-medium text-gray-600 mb-3 pr-8">Code wherever you're most productive, whether you're connected to the cloud, a remote repository, or in the browser with VS Code for the Web (vscode.dev).<br>
+            <p class="font-medium text-medium text-gray-600 mb-3 pr-10">Code wherever you're most productive, whether you're connected to the cloud, a remote repository, or in the browser with VS Code for the Web (vscode.dev).<br>
                 <br>
                 <br>
-Built-in Source Control empowers you with Git support out-of-the-box. Many other source control providers are available through extensions.
+                    <a href="" class="text-blue-700 font-medium underline">Built-in Source Control</a> empowers you with Git support out-of-the-box. Many other source control providers are available through extensions.
                 <br>
                 <br>
                 <br>
-GitHub Codespaces provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request.</p>
+                    <a href="" class="text-blue-700 font-medium underline">GitHub Codespaces</a> provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request.</p>
             </div>
             <img src="utils\swimlane-anywhere-light.png" class="pl-20 w-250 h-100 pt-5">
         </div>
+        <div class="mb-15">
+            <p class="flex pb-4 justify-center text-3xl text-black-800 font-medium">Code with rich features</p>
+            <p class="flex justify-center font-semibold text-gray-800">There's a lot more to an editor. Whether it's using built-in features or</p>
+            <p class="flex justify-center font-semibold text-gray-800">rich extensions, there's something for everyone.</p>
+        </div>
+        <div class="grid grid-cols-4 gap-2 ml-36 mr-20">
+                <div class="w-65 h-55 bg-gray-50 border-1 border-gray-300 p-4 text-xs rounded-lg pl-3 pt-4 pb-4 pr-4">
+                    <div class="pl-4 pt-2 pb-3">
+                        <img src="utils\codicon-terminal.svg" class=" bg-gray-200/80 rounded-md w-11 pt-3 pr-3 pl-3 pb-3">
+                    </div>
+                    <div class="pl-4 pb-4">
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">Integrated terminal</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Use your favorite shell whether it's zsh, pwsh, or git bash, all inside the editor.</p>
+                    </div>
+                </div>
+                <div class="w-65 h-55 bg-gray-50 border-1 border-gray-300 text-xs rounded-lg pl-3 pt-4 pb-4 pr-4">
+                    <div class="pl-4 pt-2 pb-3">
+                        <img src="utils\codicon-debug.svg" class=" bg-gray-200/80 rounded-md w-11 pt-3 pr-3 pl-3 pb-3">
+                    </div>
+                    <div class="pl-4 pb-4">
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">Run code</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Run and debug your code without leaving your editor.</p>
+                    </div>
+                </div>
+                <div class="w-65 h-55 bg-gray-50 border-1 border-gray-300 text-xs rounded-lg pl-3 pt-4 pb-4 pr-4">
+                    <div class="pl-4 pt-2 pb-3">
+                        <img src="utils\codicon-version-control.svg" class=" bg-gray-200/80 rounded-md w-11 pt-3 pr-3 pl-3 pb-3">
+                    </div>
+                    <div class="pl-4 pb-4">
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">Version control</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Built-in support for git and many other source control providers.</p>
+                    </div>
+                </div>
+                <div class="w-65 h-55 bg-gray-50 border-1 mb-3 border-gray-300 p-4 text-xs rounded-lg pl-3 pt-4 pb-4 pr-4">
+                    <div class="pl-4 pt-2 pb-3">
+                        <img src="utils\codicon-build-tasks.svg" class=" bg-gray-200/80 rounded-md w-11 pt-3 pr-3 pl-3 pb-3">
+                    </div>
+                    <div class="pl-4 pb-4">
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">Build tasks</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Run tools and analyze their results from within VS Code.</p>
+                    </div>
+                </div>
+                <div class="w-65 h-55 bg-gray-50 border-1 border-gray-300 p-4 text-xs rounded-lg pl-3 pt-4 pb-4 pr-4">
+                    <div class="pl-4 pt-2 pb-3">
+                        <img src="utils\codicon-local-history (1).svg" class=" bg-gray-200/80 rounded-md w-11 pt-3 pr-3 pl-3 pb-3">
+                    </div>
+                    <div class="pl-4 pb-4">
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">Local history</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Never lose your changes with automatically tracked local history.</p>
+                    </div>
+                </div>
+                <div class="w-65 h-55 bg-gray-50 border-1 border-gray-300 text-xs rounded-lg pl-3 pt-4 pb-4 pr-4">
+                    <div class="pl-4 pt-2 pb-3">
+                        <img src="utils\codicon-themes.svg" class=" bg-gray-200/80 rounded-md w-11 pt-3 pr-3 pl-3 pb-3">
+                    </div>
+                    <div class="pl-4 pb-4">
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">Themes</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Your theme is an extension of your personality. Add some flair to your editor and add your touch.</p>
+                    </div>
+                </div>
+                <div class="w-65 h-55 bg-gray-50 border-1 border-gray-300 text-xs rounded-lg pl-3 pt-4 pb-4 pr-4">
+                    <div class="pl-4 pt-2 pb-3">
+                        <img src="utils\codicon-accessibility.svg" class=" bg-gray-200/80 rounded-md w-11 pt-3 pr-3 pl-3 pb-3">
+                    </div>
+                    <div class="pl-4 pb-4">
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">Accessibility</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Optimized experience for screen readers, high contrast themes, and keyboard-only navigation.</p>
+                    </div>
+                </div>
+                <div class="w-65 h-55 bg-gray-50 border-1 border-gray-300 p-4 text-xs rounded-lg pl-3 pt-4 pb-4 pr-4">
+                    <div class="pl-4 pt-2 pb-3">
+                        <img src="utils\codicon-web.svg" class=" bg-gray-200/80 rounded-md w-11 pt-3 pr-3 pl-3 pb-3">
+                    </div>
+                    <div class="pl-4 pb-4">
+                        <p class="text-medium text-black-800 font-semibold text-base pt-2 pb-2">Web support</p>
+                        <p class="text-sm font-medium text-gray-600 pb-3">Whether you are on your phone, tablet, or desktop, you can access your code from anywhere.</p>
+                    </div>
+                </div>
+        </div>
+        <footer class="mb-30">
+            <div class="grid grid-cols-2 ml-36 mt-30">
+                <div class="flex">
+                <img src="utils\x-icon.svg" class="w-5 mr-6">
+                <img src="utils\github-icon.svg" class="mr-6">
+                <img src="utils\youtube-icon.svg" class="mr-243">
+                <img src="utils\microsoft.svg" class="mr-20">
+                </div>
+            </div>
+            <div class="">
+                <div class="flex text-gray-600 text-xs ml-36 mt-5 font-medium">
+                    <a href="" class="mr-6">Support</a>
+                    <a href="" class="mr-6">Privacy</a>
+                    <a href="" class="mr-6">Terms of Use</a>
+                    <a href="" class="mr-6">License</a>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
